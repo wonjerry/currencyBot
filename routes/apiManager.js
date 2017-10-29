@@ -19,5 +19,11 @@ module.exports.getCurrency = function (req, res) {
     console.log(result)
     res.json({result: result})
   })
+}
 
+module.exports.keyBoard = function (req, res) {
+ res.json({
+   "type" : "buttons",
+   "buttons" : ["일본 환율", "서비스 준비중"]
+ })
 }
