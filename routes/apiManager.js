@@ -39,7 +39,7 @@ module.exports.parseMessage = function (req, res) {
       },
       'keyboard': {
         'type': 'buttons',
-        'buttons': ['일본 환율', '감사합니다티티', '무운도!']
+        'buttons': ['일본 환율']
       }
     }
     res.set({
