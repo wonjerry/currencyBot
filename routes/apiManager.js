@@ -32,7 +32,7 @@ module.exports.parseMessage = function (req, res) {
   getCurrency(req, res, function (currency, time) {
     var massage = {
       'message': {
-        'text': '현재 ' + time + " 엔화 환율은 " + currency + " 입니다"
+        'text': '현재 ' + time + "기준 엔화 환율은 " + currency + " 입니다"
       },
       'keyboard': {
         'type': 'buttons',
