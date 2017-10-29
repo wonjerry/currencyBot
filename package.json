@@ -1,0 +1,24 @@
+{
+  "name": "currency-bot",
+  "version": "1.0.0",
+  "description": "currency bot for my friend",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "bot",
+    "currency",
+    "ypl",
+    "yahoo-api"
+  ],
+  "author": "wonjerry",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "path": "^0.12.7",
+    "request": "^2.83.0"
+  }
+}
