@@ -35,7 +35,7 @@ module.exports.parseMessage = function (req, res) {
   var callback = function () {
     var massage = {
       'message': {
-        'text': '오늘의 엔화 환율은 ' + global.currency + ' 입니다'
+        'text': '오늘의 엔화 환율은 ' + global.currency + '원 / 100엔 입니다'
       },
       'keyboard': {
         'type': 'buttons',
@@ -80,7 +80,7 @@ function getCurrency (req, res, callback) {
     var data = body.quotes
     var result = ((data['USDKRW'] / data['USDJPY']) * 100).toFixed(2)
 
-    console.log('오늘의 엔화 환율은 ' + result + ' 입니다')
+    console.log('오늘의 엔화 환율은 ' + result + '원 / 100엔 입니다')
     global.already = true
     global.currency = result
     callback(result)
